@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa'; // Import GitHub and link icons
+import Image from 'next/image';
+
 
 interface Project {
   id: number;
@@ -68,10 +70,12 @@ const Page = () => {
             key={project.id}
             className="bg-[#111827] py-12 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50 duration-300"
           >
-            <img
+            <Image
               src={project.image}
               alt={`Project ${project.id}`}
               className="w-full h-60 object-cover rounded-md mb-4 transition-transform transform hover:scale-105 duration-300"
+              width={320}
+              height={240}
             />
             <h3 className="text-xl font-semibold text-white mb-3">{project.title}</h3>
             <div className="flex gap-4 mb-3">
