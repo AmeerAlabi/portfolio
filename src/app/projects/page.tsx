@@ -3,7 +3,6 @@ import React from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa'; // Import GitHub and link icons
 import Image from 'next/image';
 
-
 interface Project {
   id: number;
   image: string;
@@ -43,7 +42,7 @@ const projects: Project[] = [
     image: '/Images/boom.png',
     githubLink: 'https://github.com/AmeerAlabi',
     websiteLink: 'https://landing-page-fxln.onrender.com/',
-    tags: ['Javascript', 'React', 'Taiwlind Css', 'Figma'],
+    tags: ['Javascript', 'React', 'Tailwind Css', 'Figma'],
     title: 'Boom-UI',
   },
   {
@@ -51,7 +50,7 @@ const projects: Project[] = [
     image: '/Images/glial.png',
     githubLink: 'https://github.com/AmeerAlabi',
     websiteLink: 'https://glial.vercel.app/',
-    tags: ['Javascript', 'React', 'Taiwlind Css', 'Figma'],
+    tags: ['Javascript', 'React', 'Tailwind Css', 'Figma'],
     title: 'Glial-UI',
   },
 ];

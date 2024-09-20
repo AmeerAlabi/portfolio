@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { MdLocationOn } from 'react-icons/md';
-import { FaLinkedin, FaTwitter, FaEnvelope, FaGithub } from 'react-icons/fa'; // Import GitHub icon
+import { FaLinkedin, FaTwitter, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
             <span className="inline-block animate-pulse">👋</span>
           </h1>
           <p className="text-base md:text-lg lg:text-xl mt-[10px] font-mono text-white">
-            I’m a front-end developer with expertise in React , React Native  and Tailwind CSS, dedicated to crafting sleek, responsive digital experiences. With a year in tech, I’m passionate about building intuitive, visually appealing web applications and continuously improving my skills.
+            I&apos;m a front-end developer with expertise in React, React Native, and Tailwind CSS, dedicated to crafting sleek, responsive digital experiences. With a year in tech, I&apos;m passionate about building intuitive, visually appealing web applications and continuously improving my skills.
           </p>
         </div>
         <div className="flex flex-col items-start gap-4">
