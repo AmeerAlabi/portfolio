@@ -5,7 +5,8 @@ import { FaLinkedin, FaTwitter, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <div id='hero' className='h-[80vh] p-6 md:p-12 flex flex-col md:flex-row bg-[#030712] w-full'>
+    <div id='hero' className='min-h-[90vh] md:min-h-[500px] p-6 md:p-12 flex flex-col md:flex-row bg-[#030712] w-full'>
+      {/* Image Section */}
       <div className="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
         <div className="relative h-[250px] w-[220px] md:h-[360px] md:w-[320px] lg:h-[400px] lg:w-[350px]">
           <Image
@@ -19,6 +20,7 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Text Section */}
       <div className="flex flex-col justify-center max-w-lg md:max-w-3xl flex-grow gap-6 md:gap-8 lg:gap-12 md:order-first md:items-start md:justify-center">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-mono md:text-5xl lg:text-6xl font-bold text-white">
@@ -29,6 +31,8 @@ const Hero = () => {
             I&apos;m a front-end developer with expertise in React, React Native, and Tailwind CSS, dedicated to crafting sleek, responsive digital experiences. With a year in tech, I&apos;m passionate about building intuitive, visually appealing web applications and continuously improving my skills.
           </p>
         </div>
+        
+        {/* Location and Socials */}
         <div className="flex flex-col items-start gap-4">
           <div className="flex items-center gap-3">
             <MdLocationOn className="text-white text-xl md:text-2xl" />
