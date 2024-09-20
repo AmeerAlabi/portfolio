@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=' h-[15vh] sticky top-0 z-30 w-full flex justify-between items-center  px-[20px] md:px-[100px] bg-[#030712] backdrop-blur-100'>
+    <div className='h-[15vh] sticky top-0 z-30 w-full flex justify-between items-center px-[20px] md:px-[100px] bg-[#030712] backdrop-blur-100'>
       <div className="text-3xl font-bold text-white">
         <Link href="/">
           {'<AA/>'}
@@ -29,9 +29,14 @@ const Navbar = () => {
         <Link href='/projects' className='text-[18px] text-[#D1D5DB] font-mono font-semibold'>Projects</Link>
         <Link href='/contact' className='border-[#1F2937] text-[16px] border-r-[1px] pr-[10px] mr-[15px] text-[#D1D5DB] font-semibold'>Contact</Link>
 
-        <div className="w-[136px] h-[36px] font-mono bg-[#F9FAFB] rounded-[10px] text-[#111827] justify-center items-center flex cursor-pointer text-[16px] font-medium">
+        {/* Download CV Button */}
+        <a
+          href="/cv.pdf" // This assumes your CV is named 'cv.pdf' and placed in the 'public' folder
+          download="AmeerAlabi_CV.pdf" // This will be the download file name
+          className="w-[136px] h-[36px] font-mono bg-[#F9FAFB] rounded-[10px] text-[#111827] justify-center items-center flex cursor-pointer text-[16px] font-medium"
+        >
           Download CV
-        </div>
+        </a>
       </div>
 
       {/* Mobile Menu */}
@@ -41,9 +46,14 @@ const Navbar = () => {
           <Link href='/projects' className='text-[18px] text-[#D1D5DB] font-mono font-semibold' onClick={toggleMenu}>Work</Link>
           <Link href='/contact' className='text-[18px] text-[#D1D5DB] font-mono font-semibold' onClick={toggleMenu}>Contact</Link>
 
-          <div className="w-[136px] h-[36px] font-mono bg-[#F9FAFB] rounded-[10px] text-[#111827] justify-center items-center flex cursor-pointer text-[16px] font-medium">
+          <a
+            href="/cv.pdf" // This assumes your CV is named 'cv.pdf' and placed in the 'public' folder
+            download="AmeerAlabi_CV.pdf" // This will be the download file name
+            className="w-[136px] h-[36px] font-mono bg-[#F9FAFB] rounded-[10px] text-[#111827] justify-center items-center flex cursor-pointer text-[16px] font-medium"
+            onClick={toggleMenu} // Close menu when the link is clicked
+          >
             Download CV
-          </div>
+          </a>
         </div>
       )}
     </div>
