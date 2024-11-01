@@ -53,6 +53,14 @@ const projects: Project[] = [
     tags: ['Javascript', 'React', 'Tailwind Css', 'Figma'],
     title: 'Glial-UI',
   },
+  {
+    id: 7,
+    image: '/Images/quiz.png',
+    githubLink: 'https://github.com/AmeerAlabi',
+    websiteLink: 'https://quick-quiz-lemon.vercel.app/',
+    tags: ['typescript', 'Next js', 'Tailwind Css', 'Figma'],
+    title: 'Quick Quiz',
+  },
 ];
 
 const Page = () => {
