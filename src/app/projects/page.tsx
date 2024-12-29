@@ -14,6 +14,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 0,
+    image: '/Images/team.png',
+    githubLink: 'https://github.com/AmeerAlabi',
+    websiteLink: 'https://teamup-v1.vercel.app/',
+    tags: ['NextJs', 'Javascript', 'Firebase', 'Tailwind CSS', 'Figma'],
+    title: 'TeamUp',
+  },
+  {
     id: 1,
     image: '/Images/write.png',
     githubLink: 'https://github.com/AmeerAlabi',
