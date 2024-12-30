@@ -78,7 +78,7 @@ const Page = () => {
 
   return (
     <div className="p-6 w-full font-mono bg-[#030712]">
-      <h2 className="text-2xl text-white font-bold mb-4">Projects</h2>
+      <h2 className="text-2xl text-white font-bold mb-4">Project</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
           <div
